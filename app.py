@@ -9,7 +9,7 @@ import threading
 
 app = Flask(__name__)
 
-BASE_URL = "https://h5.aoneroom.com","fzmovies.net"
+BASE_URL = "https://h5.aoneroom.com"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 CACHE_FILE = "movies.json"
