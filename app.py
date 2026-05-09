@@ -64,7 +64,7 @@ def scrape_movies():
         movies = []
         links = soup.find_all('a', href=re.compile(r'/detail/'))
 
-        for link in links[:30]:
+        for link in links[:80]:
             href = link.get('href')
             title = link.text.strip()
 
