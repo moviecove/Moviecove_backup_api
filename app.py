@@ -9,7 +9,7 @@ import threading
 
 app = Flask(__name__)
 
-BASE_URL = "https://h5.aoneroom.com"
+BASE_URL = "https://h5.aoneroom.com","fzmovies.net"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 CACHE_FILE = "movies.json"
@@ -64,7 +64,7 @@ def scrape_movies():
         movies = []
         links = soup.find_all('a', href=re.compile(r'/detail/'))
 
-        for link in links[:300]:
+        for link in links[:170]:
             href = link.get('href')
             title = link.text.strip()
 
